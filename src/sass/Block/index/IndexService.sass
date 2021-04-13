@@ -1,0 +1,31 @@
+.IndexService
+  padding: 70px 0
+
+  .IndexService__container
+    max-width: 1040px
+    padding: 0 20px
+    margin: 0 auto
+
+    .IndexService__contentsContainer
+      max-width: 870px
+      margin: 60px auto 0
+
+      .IndexService__contentsList
+        display: flex
+        margin-left: -50px
+
+        .IndexService__contents
+          width: calc(33.33 - 50px)
+          margin-left: 50px
+          text-align: center
+
+@include tablet
+  .IndexService
+    .IndexService__container
+      .IndexService__contentsContainer
+        .IndexService__contentsList
+          margin-left: -20px
+
+          .IndexService__contents
+            width: calc(33.33 - 20px)
+            margin-left: 20px

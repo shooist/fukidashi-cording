@@ -1,0 +1,10 @@
+extends ./Layout/_layout.pug
+append variables
+  //- Required
+  - var page = "index";
+  - var pageTitle = "稲沢・一宮のホームページ制作";
+
+
+block content
+  include Block/index/_index-first-view
+  include Block/index/_index-contents

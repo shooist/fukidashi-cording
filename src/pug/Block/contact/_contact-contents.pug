@@ -1,0 +1,46 @@
+.Contact 
+  .Contact__header 
+    .Contact__headerInner
+      h2.Common__sectionTitle
+        span CONTACT 
+        | お問い合わせ
+  
+  .Contact__contents 
+    .Contact__container
+      .Contact__message.futo-go
+        p お問い合わせ、お見積もりのご依頼やご質問等は下記のフォームよりお気軽にお問い合わせください。
+        p こちらのフォームからのお問い合せに関しては、メールでご返答させていただきます。
+        p 
+          span *
+          | がついているものは必須入力になります。
+
+        //- p メールでのお問い合わせをご希望の方は、info@fuki-dashi.com までお願いいたします。
+        //- p お電話でのお問い合わせをご希望の場合は、下記の電話番号よりお問い合わせください。
+      
+      .Contact__form 
+        dl.Contact__formItem 
+          dt.Contact__formDescription.midashi-go
+            | お名前
+            span *
+          dd.Contact__formContent 
+            input(type="text" name="f-name")
+        dl.Contact__formItem 
+          dt.Contact__formDescription.midashi-go
+            | メールアドレス
+            span *
+          dd.Contact__formContent 
+            input(type="text" name="f-mail")
+        dl.Contact__formItem 
+          dt.Contact__formDescription.midashi-go
+            | 電話番号
+          dd.Contact__formContent 
+            input(type="text" name="f-tel")
+        dl.Contact__formItem 
+          dt.Contact__formDescription.midashi-go
+            | お問い合わせ内容
+            span *
+          dd.Contact__formContent 
+            textarea(name="f-message")
+        .Contact__submitWrap 
+          .Common__button
+            input(type="submit" value="送信する").futo-go

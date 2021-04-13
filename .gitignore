@@ -1,0 +1,9 @@
+npm-debug.log
+Icon[\r]
+Icon?
+*node_modules/
+node_modules/
+*public/
+public/
+package-lock.json
+.DS_Store

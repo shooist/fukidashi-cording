@@ -1,0 +1,45 @@
+$breakpoint-se: 350px
+$breakpoint-tinysize: 380px
+$breakpoint-smartphone: 450px
+$breakpoint-smalltablet: 650px
+$breakpoint-tablet: 768px !default
+$breakpoint-smallpc: 950px
+$breakpoint-pc: 1100px
+$breakpoint-container: 1200px
+$breakpoint-largepc: 1400px
+
+@mixin se
+  @media (max-width: ($breakpoint-se))
+    @content
+
+@mixin tinysize
+  @media (max-width: ($breakpoint-tinysize))
+    @content
+
+@mixin smallsize
+  @media (max-width: ($breakpoint-smartphone))
+    @content
+
+@mixin smalltablet
+  @media (max-width: ($breakpoint-smalltablet))
+    @content
+
+@mixin tablet
+  @media (max-width: ($breakpoint-tablet))
+    @content
+
+@mixin smallpc
+  @media (max-width: ($breakpoint-smallpc))
+    @content
+
+@mixin pc
+  @media (max-width: ($breakpoint-pc))
+    @content
+
+@mixin container
+  @media (max-width: ($breakpoint-container))
+    @content
+
+@mixin largepc
+  @media (max-width: ($breakpoint-largepc))
+    @content

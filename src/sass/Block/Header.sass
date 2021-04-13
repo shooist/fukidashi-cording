@@ -1,0 +1,69 @@
+.Header
+  position: fixed
+  top: -100px
+  width: 100%
+  height: 100px
+  background-color: #fff
+  transition: all 3s
+  opacity: 0
+  z-index: 4
+
+  &.active
+    top: 0
+    opacity: 1
+
+  .Header__inner
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+
+    &>:first-child
+      position: absolute
+      left: 50px
+
+    .Header__logo
+      max-width: 97px
+
+    .Header__navi
+      .Header__naviList
+        display: flex
+        margin-left: -40px
+
+        .Header__naviMenu
+          position: relative
+          margin-left: 40px
+
+          &:after
+            content: ''
+            position: absolute
+            left: 0
+            bottom: -18px
+            width: 100%
+            border-bottom: 1px solid #000
+            transition: all .5s
+            transform-origin: left top
+            transform: scaleX(0)
+
+          &:hover::after
+            transform: scaleX(1)
+
+          a
+            font-size: 16px
+            font-family: a-otf-midashi-go-mb31-pr6n, sans-serif
+            font-weight: 600
+            font-style: normal
+
+@include tablet
+  .Header
+    top: -80px
+    height: 80px
+    background-color: transparent
+
+    .Header__inner
+      &>:first-child
+        left: 20px
+
+      .Header__logo
+      .Header__navi
+        display: none

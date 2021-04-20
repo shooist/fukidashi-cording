@@ -1,0 +1,18 @@
+mixin TechBlogSidebar()
+  .TechBlog__sidebar
+    section.TechBlog__sidebarSection
+      .TechBlog__sidebarTitle 
+        | New Posts
+      ul.TechBlog__newPostsLists 
+        - for (var i = 0; i < 4; i++)
+          li.TechBlog__newPostsItem
+            a(href="tech-blog-detail.html")
+              time.TechBlog__newPostsDate(time-date="2021.04.16") 
+                | 2021.04.16
+              .TechBlog__newPostsTitle 
+                | ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。
+        
+    section.TechBlog__sidebarSection 
+      .TechBlog__sidebarTitle 
+        | Tags
+      +BlogTags(["WordPress", "CSS", "CSV", "CSS", "CSS", "CSV", "WordPress", "CSS", "CSV"])

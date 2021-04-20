@@ -1,0 +1,9 @@
+extends ./Layout/_layout.pug
+append variables
+  //- Required
+  - var page = "tech-blog-tags";
+  - var pageTitle = "技術ブログタグ一覧";
+
+block content
+  include Block/tech-blog/_tech-header
+  include Block/tech-blog-tags/_tech-blog-tags-contents

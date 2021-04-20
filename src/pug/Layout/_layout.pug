@@ -22,7 +22,9 @@ html(lang="ja")
     script(src="js/script.js")
   body
     include ../Common/Mixins/_import
-    include ../Block/_Header
+    if page
+    else
+      include ../Block/_Header
     block content
     include ../Block/_Footer
   script.

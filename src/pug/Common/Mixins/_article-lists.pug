@@ -1,0 +1,13 @@
+mixin ArticleLists()
+  .Common__articleLists
+    - for (var i = 0; i < 3; i++)
+      article.Common__articleItem 
+        a(href="tech-blog-detail.html").Common__articleThumbnail 
+          img(src="img/Common/blog-default-thumbnail.png")
+        .Common__articleBody
+          a(href="tech-blog-detail.html").Common__articleLink
+            time.Common__articleDate(time-date="2021.04.16") 
+              | 2021.04.16
+            .Common__articleTitle 
+              | ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。
+          +BlogTags(["WordPress", "CSV", "CSS"])

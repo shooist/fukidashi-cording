@@ -1,0 +1,7 @@
+mixin BlogTags(items)
+  ul.Common__blogTags
+    each item in items
+      li.Common__blogTagsItem
+        a(href="tech-blog-tags.html") 
+          span #
+          | #{item}

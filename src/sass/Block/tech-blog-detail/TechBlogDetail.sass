@@ -1,0 +1,46 @@
+.TechBlogDetail
+  .TechBlogDetail__container
+    display: flex
+    max-width: 1180px
+    padding: 50px 20px
+    margin: 0 auto
+
+    .TechBlogDetail__contents
+      // width: 100%
+      padding-right: 6%
+
+      .TechBlogDetail__contentsHeader
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        .TechBlogDetail__articleDate
+          color: #8C8C93
+          font-size: 16px
+          // transition-duration: 0.5s
+
+      .TechBlogDetail__articleTitle
+        color: #333
+        font-size: 24px
+        font-weight: bold
+        line-height: calc(41 / 24)
+        margin-bottom: 20px
+
+      .TechBlogDetail__articleEyeCatch
+        border: 1px solid #333
+        margin-bottom: 20px
+
+        img
+          display: block
+          width: 100%
+
+@include tablet
+  .TechBlogDetail
+    .TechBlogDetail__container
+      .TechBlogDetail__contents
+        padding-right: 0
+
+@include smallsize
+  .TechBlogDetail
+    .TechBlogDetail__container
+      .TechBlogDetail__contents

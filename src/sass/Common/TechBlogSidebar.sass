@@ -1,0 +1,39 @@
+.TechBlog__sidebar
+  min-width: 300px
+
+  .TechBlog__sidebarSection
+    margin-bottom: 50px
+
+    .TechBlog__sidebarTitle
+      color: #333
+      font-size: 20px
+      font-weight: bold
+      border-bottom: 1px solid #333
+      padding-bottom: 10px
+      margin-bottom: 10px
+
+    .TechBlog__newPostsLists
+      .TechBlog__newPostsItem
+
+        a
+          display: block
+
+          &:hover
+            .TechBlog__newPostsDate,
+            .TechBlog__newPostsTitle
+              opacity: .6
+
+        .TechBlog__newPostsDate
+          color: #8C8C93
+          font-size: 12px
+
+        .TechBlog__newPostsTitle
+          color: #333
+          font-size: 14px
+          line-height: 1.5
+          margin-top: 7px
+          margin-bottom: 15px
+
+@include tablet
+  .TechBlog__sidebar
+    display: none

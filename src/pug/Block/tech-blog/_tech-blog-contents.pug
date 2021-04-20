@@ -1,0 +1,15 @@
+.TechBlog
+  .TechBlog__container 
+    .TechBlog__contentsList
+      - for (var i = 0; i < 5; i++)
+        article.TechBlog__contentsItem
+          a(href="tech-blog-detail.html")
+            .TechBlog__itemImage 
+              img(src="img/TechBlog/TechBlog__thumbnail--default.png")
+            time.TechBlog__itemDate(time-date="2021.04.16") 
+              | 2021.04.16
+            h2.TechBlog__itemTitle 
+              | ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。ここにタイトルが入ります。
+          +BlogTags(["WordPress", "CSV", "CSS"])
+
+    +TechBlogSidebar()

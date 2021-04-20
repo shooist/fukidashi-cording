@@ -1,0 +1,89 @@
+.Common__articleLists
+  .Common__articleItem
+    display: flex
+    margin-bottom: 40px
+
+    &:hover
+      .Common__articleThumbnail
+        img
+          transform: scale(1.05)
+          transition-duration: 0.5s
+
+        &::before
+          background-color: rgba(0, 0, 0, .1)
+
+      .Common__articleDate,
+      .Common__articleTitle
+        opacity: .6
+
+    .Common__articleThumbnail
+      width: 30%
+      position: relative
+      display: block
+      border: 1px solid #333
+      // width: 100%
+      // max-width: 220px
+      margin-right: 3%
+      overflow: hidden
+      height: fit-content
+
+      img
+        display: block
+        width: 100%
+        transition-duration: 0.3s
+
+      &::before
+        width: 100%
+        height: 100%
+        content: ""
+        display: block
+        background-color: rgba(0, 0, 0, 0)
+        position: absolute
+        top: 0
+        left: 0
+        z-index: 2
+        transition: .3s
+
+    .Common__articleBody
+      width: 70%
+
+      .Common__articleLink
+        display: block
+
+        .Common__articleDate
+          color: #8C8C93
+          font-size: 14px
+          font-weight: 500
+
+        .Common__articleTitle
+          color: #333
+          font-size: 20px
+          font-weight: bold
+          line-height: calc(30 / 20)
+          margin-top: 5px
+          margin-bottom: 10px
+
+@include tablet
+  .Common__articleLists
+    .Common__articleItem
+      display: block
+
+      .Common__articleThumbnail
+        width: 100%
+        margin-bottom: 10px
+
+      .Common__articleBody
+        width: 100%
+
+        .Common__articleLink
+          .Common__articleDate
+          .Common__articleTitle
+
+@include smallsize
+  .Common__articleLists
+    .Common__articleItem
+      .Common__articleThumbnail
+      .Common__articleBody
+        .Common__articleLink
+          .Common__articleDate
+          .Common__articleTitle
